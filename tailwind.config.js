@@ -1,10 +1,7 @@
 import defaultTheme from 'tailwindcss/defaultTheme';
-
 /** @type {import('tailwindcss').Config} */
-export default {
-    content: [
-        './*.html',
-    ],
+module.exports = {
+    content: ["./*.{html,js}"],
     theme: {
         extend: {
             fontFamily: {
@@ -48,4 +45,4 @@ export default {
         },
     },
     plugins: [],
-};
+  }
