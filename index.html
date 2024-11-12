@@ -1,0 +1,515 @@
+<?php 
+$dapur = [
+[
+    // 1
+    'gmbr' => 'images/produk/dapur/1.png',
+    'title' => 'Pisau Dapur',
+    'harga' => 'Rp. 35.000',
+    'desc' => 'lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.',
+],
+[
+    // 2
+    'gmbr' => 'images/produk/dapur/2.png',
+    'title' => 'Wajan',
+    'harga' => 'Rp. 64.000',
+    'desc' => 'lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.',
+],
+[
+    // 3
+    'gmbr' => 'images/produk/dapur/3.png',
+    'title' => 'Panci Stainless Steel',
+    'harga' => 'Rp. 35.000',
+    'desc' => 'lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.',
+],
+[
+    // 4
+    'gmbr' => 'images/produk/dapur/4.png',
+    'title' => 'Spatula Stainless Steel',
+    'harga' => 'Rp. 20.000',
+    'desc' => 'lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.',
+],
+[
+    // 5
+    'gmbr' => 'images/produk/dapur/5.png',
+    'title' => 'Pemeras Jeruk',
+    'harga' => 'Rp. 27.500',
+    'desc' => 'lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.',
+],
+[
+    // 6
+    'gmbr' => 'images/produk/dapur/6.png',
+    'title' => 'Serbet',
+    'harga' => 'Rp. 13.000',
+    'desc' => 'lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.',
+],
+[
+    // 7
+    'gmbr' => 'images/produk/dapur/7.png',
+    'title' => 'Telenan Kayu',
+    'harga' => 'Rp. 30.000',
+    'desc' => 'lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.',
+],
+[
+    // 8
+    'gmbr' => 'images/produk/dapur/8.png',
+    'title' => 'Bakul',
+    'harga' => 'Rp. 36.000',
+    'desc' => 'lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.',
+],
+[
+    // 9
+    'gmbr' => 'images/produk/dapur/9.png',
+    'title' => 'Sendok Sayur',
+    'harga' => 'Rp. 28.000',
+    'desc' => 'lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.',
+],
+[
+    // 10
+    'gmbr' => 'images/produk/dapur/10.png',
+    'title' => 'Parutan Keju',
+    'harga' => 'Rp. 22.000',
+    'desc' => 'lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.',
+],
+];
+?>
+
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth focus:scroll-auto">
+<!-- Smooth Scroll -->
+
+<head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+      <title>Website Dagang</title>
+      <!-- Icon Web -->
+      <link rel="icon" href="{{ asset('logopink.ico') }}" />
+      <!-- Font Inter -->
+      <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+            rel="stylesheet" />
+      <!-- Font Josefin -->
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+            rel="stylesheet" />
+      <!-- Font Boxicon -->
+      <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+      <!-- Icon -->
+      <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+      <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+      <!-- Swipper -->
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+      <!-- Scroll Reveal  -->
+      <script src="https://unpkg.com/scrollreveal"></script>
+      <!-- Connect TailwindCSS -->
+      <link href="./output.css" rel="stylesheet" />
+      <style>
+            #slider {
+                  display: flex;
+                  transition: transform 0.5s ease-in-out;
+            }
+
+            #slider img {
+                  flex: 0 0 100%;
+            }
+      </style>
+</head>
+
+<body class="bg-c-white font-inter w-full overflow-x-hidden">
+      <!-- !Navbar -->
+      <div
+            class="sticky top-0 flex flex-row justify-between align-middle px-10 lg:px-20 shadow-lg w-full bg-c-white z-[100]">
+            <div class="my-auto flex flex-row justify-center h-[83px] items-center">
+                  <img src="images/logo/logopink.png" alt="" class="w-16 h-16 lg:w-[4.5rem] lg:h-[4.5rem]" />
+                  <h1
+                        class="block text-3xl font-extrabold text-pink-cream px-3 font-alegreya italic my-auto lg:text-4xl">
+                        DEWATA GOODS
+                  </h1>
+            </div>
+            <div class="align-items-center my-auto hidden lg:block">
+                  <a href="#"
+                        class="px-4 py-9 lg:py-11 lg:px-6 text-pink-cream font-bold hover:bg-darker-blue hover:text-cream transition-all ease-in-out duration-300 font-inter">
+                        HOME
+                  </a>
+                  <a href="#about"
+                        class="px-4 py-9 lg:py-11 lg:px-6 text-pink-cream font-bold hover:bg-darker-blue hover:text-cream transition-all ease-in-out duration-300 font-inter">
+                        ABOUT
+                  </a>
+                  <a href="#product"
+                        class="px-4 py-9 lg:py-11 lg:px-6 text-pink-cream font-bold hover:bg-darker-blue hover:text-cream transition-all ease-in-out duration-300 font-inter">
+                        PRODUCT
+                  </a>
+                  <a href="#contact"
+                        class="px-4 py-9 lg:py-11 lg:px-6 text-pink-cream font-bold hover:bg-darker-blue hover:text-cream transition-all ease-in-out duration-300 font-inter">
+                        CONTACT
+                  </a>
+            </div>
+
+            <!-- Hamburger -->
+            <div class="lg:hidden flex items-center">
+                  <button id="hamburger"
+                        class="text-calm-blue hover:text-pink-cream focus:outline-none transition-all ease-linear duration-300">
+                        <svg class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                  </button>
+            </div>
+      </div>
+
+      <!-- Mobile Menu  -->
+      <div id="mobile-menu"
+            class="fixed top-0 left-0 w-full bg-white shadow-lg transform -translate-y-full transition-transform duration-300 ease-in-out z-[60] lg:hidden rounded-xl">
+            <div class="pt-28 pb-4">
+                  <a href="#"
+                        class="px-4 py-9 lg:py-11 lg:px-6 text-pink-cream font-bold hover:bg-darker-blue hover:text-cream transition-all ease-in-out duration-300 font-inter block py-4 px-6 text-sm hover:bg-gray-200 mobile-link">
+                        HOME
+                  </a>
+                  <a href="#about"
+                        class="px-4 py-9 lg:py-11 lg:px-6 text-pink-cream font-bold hover:bg-darker-blue hover:text-cream transition-all ease-in-out duration-300 font-inter block py-4 px-6 text-sm hover:bg-gray-200 mobile-link">
+                        ABOUT
+                  </a>
+                  <a href="#product"
+                        class="px-4 py-9 lg:py-11 lg:px-6 text-pink-cream font-bold hover:bg-darker-blue hover:text-cream transition-all ease-in-out duration-300 font-inter block py-4 px-6 text-sm hover:bg-gray-200 mobile-link">
+                        PRODUCT
+                  </a>
+                  <a href="#contact"
+                        class="px-4 py-9 lg:py-11 lg:px-6 text-pink-cream font-bold hover:bg-darker-blue hover:text-cream transition-all ease-in-out duration-300 font-inter block py-4 px-6 text-sm hover:bg-gray-200 mobile-link">
+                        CONTACT
+                  </a>
+            </div>
+      </div>
+
+      <!-- Overlay  -->
+      <div id="overlay" class="fixed inset-0 bg-black bg-opacity-50 z-50 hidden lg:hidden"></div>
+      <!-- !End Navbar -->
+
+      <!-- !Home -->
+      <div id='home' class="h-homeh flex flex-col justify-center lg:flex-row overflow-x-hidden">
+            <!-- Left Content / Top  -->
+            <div class=" w-full lg:w-[50%] z-40 p-10 lg:my-auto xl:ml-10">
+                  <!-- Opening Text  -->
+                  <h1 class="judul text-6xl leading-none font-bold text-dark-blue md:text-7xl lg:text-8xl xl:text-9xl">
+                        Temukan
+                        Seluruh</h1>
+                  <h1 class="judul text-6xl leading-none  font-bold text-dark-blue md:text-7xl lg:text-8xl xl:text-9xl">
+                        <span class="text-pink-cream text-7xl md:text-8xl lg:text-9xl">Kebutuhan Rumah</span> Anda!</h1>
+                  <p class="judul text-xl text-calm-blue mt-4 lg:text-3xl">Pusat Katalog Perabotan Rumah Tangga
+                        Terlengkap!</p>
+            </div>
+            <!-- Right Content / Bottom  -->
+            <div class="flex flex-col-reverse lg:flex-col lg:my-auto lg:max-w-[50%] xl:my-auto">
+                  <!-- Image Preview Product  -->
+                  <div
+                        class="cover container lg:max-w-[100%] lg:max-h-[60%] mx-auto mt-10 xl:mt-0 relative overflow-hidden md:max-h-100 sm:rounded-lg lg:rounded-l-3xl lg:rounded-r-none">
+                        <div id="slider" class="flex transition-transform duration-500 ease-in-out">
+                              <img src="images/dashboard/1.jpg" alt=""
+                                    class="w-full h-full object-cover flex-shrink-0 md:aspect-video lg:aspect-[1/1] xl:aspect-[11/8]">
+                              <img src="images/dashboard/2.jpg" alt=""
+                                    class="w-full h-full object-cover flex-shrink-0 md:aspect-video lg:aspect-[1/1] xl:aspect-[11/8]">
+                              <img src="images/dashboard/3.jpg" alt=""
+                                    class="w-full h-full object-cover flex-shrink-0 md:aspect-video lg:aspect-[1/1] xl:aspect-[11/8]">
+                              <img src="images/dashboard/4.jpg" alt=""
+                                    class="w-full h-full object-cover flex-shrink-0 md:aspect-video lg:aspect-[1/1] xl:aspect-[11/8]">
+                              <img src="images/dashboard/5.jpg" alt=""
+                                    class="w-full h-full object-cover flex-shrink-0 md:aspect-video lg:aspect-[1/1] xl:aspect-[11/8]">
+                              <img src="images/dashboard/6.jpg" alt=""
+                                    class="w-full h-full object-cover flex-shrink-0 md:aspect-video lg:aspect-[1/1] xl:aspect-[11/8]">
+
+                              <img src="images/dashboard/1.jpg" alt=""
+                                    class="w-full h-full object-cover flex-shrink-0 md:aspect-video lg:aspect-[1/1] xl:aspect-[11/8]">
+                        </div>
+                  </div>
+
+                  <!-- Button Go To Product  -->
+                  <div class="btn-produk mx-auto lg:mt-5 xl:block xl:mt-10">
+                        <a href="#product"
+                              class="p-4 px-7 text-xs font-semibold border-2 border-dark-blue text-dark-blue bg-c-white rounded-full hover:bg-calm-blue hover:text-c-white ease-in-out duration-300 shadow-lg text-center flex items-center lg:text-xl ">SEE
+                              PRODUCT <i class='ml-2 bx bx-chevron-down text-xl lg:text3-xl z-[70]'></i></a>
+                  </div>
+            </div>
+      </div>
+      <!-- !End Home -->
+
+      <!--!About -->
+      <div id="about" class="bg-c-white h-[100vh] mb-20 px-10 sm:px-20 flex flex-col justify-center">
+            <!-- Line  -->
+            <div class="w-100 h-[1px] mx-10  bg-pink-cream opacity-60"></div>
+
+            <div class="py-20 flex flex-col justify-center items-center container mx-auto px-10 lg:px-40 xl:px-72">
+                  <img src="images/logo/logopink.png" alt="" class="sc-1 w-32 h-32 mb-7 lg:w-40 lg:h-40">
+                  <h1
+                        class="sc-1 font-extrabold text-pink-cream text-5xl font-alegreya italic mb-8 text-center lg:text-6xl">
+                        DEWATA
+                        GOODS</h1>
+
+                  <p class="sc-1 text-sm text-justify center italic text-darker-blue md:text-lg lg:text-xl xl:text-2xl">
+                        Selamat
+                        datang di Dewata Goods – toko online terpercaya yang menyediakan berbagai alat kebersihan
+                        berkualitas untuk
+                        kebutuhan rumah tangga Anda. Kami berdedikasi untuk menyediakan produk-produk kebersihan
+                        terbaik, mulai dari
+                        alat pel, sapu, sikat, hingga perlengkapan kebersihan spesifik lainnya.</p>
+                  <p class="sc-1 text-sm text-justify mt-10 italic text-darker-blue md:text-lg lg:text-xl xl:text-2xl">
+                        Dengan
+                        pengalaman kami dalam memenuhi kebutuhan pelanggan di seluruh Bali, kami memahami pentingnya
+                        kualitas, daya
+                        tahan, dan efektivitas dalam setiap produk yang kami tawarkan. Di Dewata Goods, kami tidak hanya
+                        menyediakan
+                        barang, kami menyediakan solusi untuk menciptakan lingkungan yang bersih dan sehat.</p>
+
+                  <p
+                        class="sc-1 text-sm text-justify mt-10 italic font-semibold bg-calm-blue text-c-white px-3 py-2 rounded-lg md:text-lg lg:text-xl xl:text-2xl">
+                        Mengapa Memilih Dewata Goods?</p>
+
+                  <ul
+                        class="ls mt-10 list-disc text-sm text-justify italic text-darker-blue md:text-lg lg:text-xl xl:text-2xl">
+                        <li class=""><span class="font-semibold text-calm-blue">Produk Berkualitas Tinggi</span>: Kami
+                              hanya
+                              menyediakan produk dari bahan yang kokoh dan tahan lama.</li>
+                        <li class="mt-3"><span class="font-semibold text-calm-blue">Harga Terjangkau</span>: Kami
+                              berkomitmen
+                              untuk menawarkan harga yang kompetitif tanpa mengurangi kualitas.</li>
+                        <li class="mt-3"><span class="font-semibold text-calm-blue">Pengiriman Cepat & Aman</span>: Kami
+                              siap
+                              mengantar produk pesanan Anda dengan cepat dan dalam kondisi terbaik.</li>
+                        <li class="mt-3"><span class="font-semibold text-calm-blue">Layanan Pelanggan Terbaik</span>:
+                              Kepuasan
+                              Anda adalah prioritas kami.</li>
+                  </ul>
+            </div>
+
+            <!-- Line  -->
+            <div class="w-100 h-[1px] mx-10  bg-pink-cream opacity-60"></div>
+      </div>
+      <!-- !End About -->
+      <!-- !Product -->
+      <div id="product" class="h-full w-full bg-c-white font-inter">
+            <div class="py-40 px-5 w-full h-full">
+                  <!-- Introduction Product  -->
+                  <div class="w-[100%] h-[100%]">
+                        <h1 class="jdl text-pink-cream text-5xl font-extrabold text-center lg:text-6xl">PRODUK KAMI</h1>
+                        <p
+                              class="jdl text-darker-blue text-justify text-xs leading-5 mt-10 w-[85%] mx-auto lg:w-[70%] lg:text-lg xl:text-xl">
+                              Di Dewata Goods, kami menawarkan pilihan produk yang sangat beragam, sehingga Anda dapat
+                              menemukan
+                              berbagai kebutuhan rumah tangga sesuai selera dan gaya Anda. Selain itu, kami berkomitmen
+                              untuk
+                              memberikan harga yang terjangkau, memungkinkan Anda mendapatkan produk berkualitas tanpa
+                              harus
+                              mengeluarkan biaya yang besar. Kami percaya bahwa setiap rumah layak mendapatkan sentuhan
+                              istimewa tanpa
+                              perlu mengorbankan biaya yang besar</p>
+                  </div>
+
+                  <!-- Product Section  -->
+                  <div class="flex flex-col py-10 px-5 gap-10 lg:px-40 xl">
+                        <div>
+                              <div class="kategori flex align-middle justify-start text-darker-blue items-center">
+                                    <span
+                                          class="material-symbols-outlined text-3xl bg-pink-cream rounded-full py-2 px-[8.5px] mr-3 text-c-white flex justify-center items-center">skillet</span>
+                                    <h1 class="text-3xl font-semibold">Peralatan Dapur</h1>
+                              </div>
+                              <div id="mySwiper1"
+                                    class="mySwiper1 scroller relative w-full max-w-7xl xl:max-w-full mx-auto overflow-hidden px-5 mt-5 bg-c-white py-5 rounded-xl border-solid ">
+                                    <!-- Wrapper  -->
+                                    <div class="swiper-wrapper flex transition-transform duration-300 ease-in-out">
+                                          <!-- Cards  -->
+                                          <div class="cards1 swiper-slide w-full  flex-shrink-0 px-2 flex flex-col">
+                                                <div
+                                                      class="bg-c-white rounded-3xl flex flex-col justify-center items-center border border-darker-blue shadow-inner p-3 h-100 truncate md:flex-col xl:flex-col lg:flex-row md:justify-around ">
+                                                      <div
+                                                            class="w-full sm:max-w-[70%]  md:w-[50%] xl:max-w-full lg:h-56 lg:w-56 xl:h-56 xl:w-56  bg-c-white mb-4 aspect-square">
+                                                            <img src="{{ asset($dpr['gmbr']) }}" alt="Bersih 1"
+                                                                  class="w-full sm:max-w-[100%]  md:w-full xl:max-w-full lg:h-56 lg:w-56 xl:w-56 xl:h-56 object-cover aspect-square">
+                                                      </div>
+                                                      <div class="text-center ">
+                                                            <h1
+                                                                  class=" font-semibold text-xs text-ellipsis  w-[90%] sm:w-100 sm:text-base md:text-lg lg:text-xl">
+                                                                  {{ $dpr['title'] }}</h1>
+                                                            <h2
+                                                                  class="text-gray-600 mt-2 text-xs sm:text-sm md:text-base lg:text-lg">
+                                                                  {{ $dpr['harga'] }}
+                                                            </h2>
+                                                      </div>
+                                                </div>
+                                          </div>
+                                          @endforeach
+                                    </div>
+                                    {{-- Navigation Button --}}
+                                    <button id="prevBtn1"
+                                          class="prevBtn1 absolute left-1 top-1/2 transform -translate-y-1/2 bg-darker-blue text-c-white  p-2 rounded-full shadow-md z-20 lg:scale-125 xl:scale lg:left-3">
+                                          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                                stroke="currentColor" class="w-6 h-6">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                      d="M15 19l-7-7 7-7" />
+                                          </svg>
+                                    </button>
+                                    <button id="nextBtn1"
+                                          class=" extBtn1 absolute right-1 top-1/2 transform -translate-y-1/2 bg-darker-blue text-c-white  p-2 rounded-full shadow-md z-20 lg:scale-125 lg:right-3">
+                                          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                                stroke="currentColor" class="w-6 h-6">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                      d="M9 5l7 7-7 7" />
+                                          </svg>
+                                    </button>
+                              </div>
+                        </div>
+                        <div>
+                              <div class="kategori flex align-middle justify-start text-darker-blue items-center">
+                                    <span
+                                          class="material-symbols-outlined text-3xl bg-pink-cream rounded-full py-2 px-[8.5px] mr-3 text-c-white flex justify-center items-center">cleaning_services</span>
+                                    <h1 class="text-3xl font-semibold">Peralatan Kebersihan</h1>
+                              </div>
+                              <x-kebersihan></x-kebersihan>
+                        </div>
+                        <div>
+                              <div class="kategori flex align-middle justify-start text-darker-blue items-center">
+                                    <span
+                                          class="material-symbols-outlined text-3xl bg-pink-cream rounded-full py-2 px-[8.5px] mr-3 text-c-white flex justify-center items-center">restaurant</span>
+                                    <h1 class="text-3xl font-semibold">Alat Makan & Minum</h1>
+                              </div>
+                              <x-makanminum></x-makanminum>
+                        </div>
+                  </div>
+            </div>
+      </div>
+
+      <!-- !End Product -->
+      <!-- !Contact -->
+
+      <!-- !End Contact -->
+      <x-product></x-product>
+      <x-contact></x-contact>
+      <x-info></x-info>
+
+      <script>
+            const hamburger = document.getElementById("hamburger");
+            const mobileMenu = document.getElementById("mobile-menu");
+            const overlay = document.getElementById("overlay");
+            const mobileLinks = document.querySelectorAll(".mobile-link");
+            let isMenuOpen = false;
+
+            // When Hamburger is Clicked
+            function toggleMenu() {
+                  isMenuOpen = !isMenuOpen;
+                  if (isMenuOpen) {
+                        mobileMenu.classList.remove("-translate-y-full");
+                        hamburger.classList.add("text-pink-cream");
+                        overlay.classList.remove("hidden");
+                        document.body.style.overflow = "hidden";
+                  } else {
+                        mobileMenu.classList.add("-translate-y-full");
+                        hamburger.classList.remove("text-pink-cream");
+                        overlay.classList.add("hidden");
+                        document.body.style.overflow = "";
+                  }
+            }
+
+            hamburger.addEventListener("click", toggleMenu);
+            overlay.addEventListener("click", toggleMenu);
+
+            mobileLinks.forEach((link) => {
+                  link.addEventListener("click", () => {
+                        if (isMenuOpen) {
+                              toggleMenu();
+                        }
+                  });
+            });
+
+            document.addEventListener('DOMContentLoaded', function () {
+                  const slider = document.getElementById('slider');
+                  const slides = slider.children;
+                  let currentSlide = 0;
+                  const totalSlides = slides.length - 1; // Subtract 1 because of the duplicated first slide
+
+                  function nextSlide() {
+                        currentSlide++;
+                        updateSlider();
+                  }
+
+                  function updateSlider() {
+                        slider.style.transition = 'transform 0.5s ease-in-out';
+                        slider.style.transform = `translateX(-${currentSlide * 100}%)`;
+
+                        // If we've moved past the last slide, reset to first slide without transition
+                        if (currentSlide === totalSlides) {
+                              setTimeout(() => {
+                                    slider.style.transition = 'none';
+                                    currentSlide = 0;
+                                    slider.style.transform = `translateX(0)`;
+                              }, 500); // This should match the transition duration
+                        }
+                  }
+
+                  // Change slide every 3 seconds
+                  setInterval(nextSlide, 3000);
+            });
+
+            ScrollReveal({
+                  distance: "80px",
+                  duration: 1000,
+                  delay: 400,
+            });
+
+            ScrollReveal().reveal(".judul", {
+                  delay: 200,
+                  origin: "left",
+                  interval: 500,
+            });
+            ScrollReveal().reveal(".cover", {
+                  delay: 300,
+                  origin: "right",
+            });
+            ScrollReveal().reveal(".btn-produk", {
+                  delay: 200,
+                  origin: "bottom",
+            });
+            ScrollReveal().reveal(".sc-1", {
+                  delay: 200,
+                  origin: "top",
+                  interval: 100,
+            });
+            ScrollReveal().reveal("us li", {
+                  delay: 400,
+                  origin: "left",
+                  interval: 50,
+            });
+            ScrollReveal().reveal(".jdl", {
+                  delay: 200,
+                  origin: "top",
+                  interval: 100,
+            });
+            ScrollReveal().reveal(".ls li", {
+                  delay: 400,
+                  origin: "left",
+                  interval: 50,
+            });
+            ScrollReveal().reveal(".kategori", {
+                  delay: 300,
+                  origin: "left",
+                  interval: 100,
+            });
+            ScrollReveal().reveal(".scroller", {
+                  delay: 300,
+                  origin: "top",
+            });
+            ScrollReveal().reveal(".cards1", {
+                  delay: 300,
+                  origin: "top",
+                  interval: 100,
+            });
+            ScrollReveal().reveal(".cards2", {
+                  delay: 300,
+                  origin: "top",
+                  interval: 100,
+            });
+            ScrollReveal().reveal(".cards3", {
+                  delay: 300,
+                  origin: "top",
+                  interval: 100,
+            });
+      </script>
+</body>
+
+</html>
